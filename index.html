@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Coin</title>
+    <script
+      type="text/javascript"
+      src="//unpkg.com/@worldcoin/id/dist/world-id.js"
+    ></script>
+    <script src="index.js"></script>
+    <script src="file.js"></script>
+    <script src="https://js.upload.io/upload-js/v1"></script>
+  </head>
+  <body>
+    <style>
+      img {
+        width: 500px;
+      }
+    </style>
+    <div align="center">
+      <h1>Welcome to Worldcoin</h1>
+      <h2>Upload a file</h2>
+      <input type="file" onchange="onFileSelected(event)" />
+      <br /><br />
+      <div class="world-id" id="world-id"></div>
+      <br /><br />
+      <img id="picture" />
+    </div>
+  </body>
+</html>
